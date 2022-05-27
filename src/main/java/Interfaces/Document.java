@@ -20,6 +20,7 @@ public abstract class Document implements Printed {
         return this.getNumberWithName();
     }
 
+    @Override
     public String getNumberWithName() {
         return String.format("Номер документа: %1$s\n", number) +
                 String.format("Наименование документа: %1$s\n", name);

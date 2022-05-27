@@ -7,7 +7,6 @@ import lombok.Setter;
 public class Mail extends Document {
     static private int count = 1;
 
-    private final String name;
     @Getter
     @Setter
     private String from;
@@ -20,7 +19,6 @@ public class Mail extends Document {
 
     public Mail(String name, String from, String to, String message) {
         super(count++, name);
-        this.name = name;
         this.from = from;
         this.to = to;
         this.message = message;

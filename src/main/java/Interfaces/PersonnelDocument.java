@@ -23,6 +23,7 @@ public abstract class PersonnelDocument extends Document {
         this.status = Status.EXECUTED;
     }
 
+    @Override
     public String getPrintedText() {
         return super.getPrintedText() +
                 String.format("Статус: %1$s\n", status.getValue()) +
